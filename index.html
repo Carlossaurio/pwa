@@ -4,15 +4,46 @@
     <meta charset="utf-8">
     <link rel="manifest" href="manifest.json">
     <title>PWA 18 SEP 2025</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+            font-family: sans-serif;
+        }
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        img {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+        }
+        #contenido {
+            position: absolute;
+            top: 20px;
+            left: 300px;
+        }
+        #lienzo {
+            position: absolute;
+            top: 80px;
+            left: 820px;
+        }
+        .enlace-exhibir-lineas {
+            position: absolute;
+            top: 60px;
+            left: 820px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hola</h1>
-    <img src="hola.jpg" />
+    <img src="unicorn.jpg" />
     <div id="contenido">
-    
-    </div>
+        </div>
     <div>
-        <a href="javascript:void(0)" onclick="exhibirLineas()">Exhibir lineas</a><br />
+        <a href="javascript:void(0)" onclick="exhibirLineas()" class="enlace-exhibir-lineas">Exhibir lineas</a><br />
         <canvas id="lienzo" width="400" height="300" style="border:1px solid #000000;"></canvas>
     </div>
     <script async src="lib1.js"></script>
